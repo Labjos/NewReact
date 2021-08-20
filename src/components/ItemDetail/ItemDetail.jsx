@@ -1,4 +1,4 @@
-import imagen from '../../imagenes/coca.JPG'
+import React from 'react'
 
 
 export const ItemDetail = ({itemDetail}) => {

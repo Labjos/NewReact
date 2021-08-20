@@ -1,6 +1,10 @@
 import React from 'react'
 import '../ItemListContainer/ItemListContainer.css'
 import { useState, useEffect } from 'react'
+import { ItemList} from '../ItemList/ItemList'
+import nero from '../../imagenes/nero.JPG'
+import myrica from '../../imagenes/Myrica.JPG'
+import kraken from '../../imagenes/kraken.JPG'
 
 
 export const ItemListContainer = () => {
@@ -11,7 +15,7 @@ const prod = [{
       "nombre":"Fernet",
       "marca": "Nero53",
       "precio": 620,
-      "imagen": "../imagenes/nero.JPG",
+      "imagen": nero,
       "stock": 10,
       "id": 1
     },
@@ -19,7 +23,7 @@ const prod = [{
      "nombre":"Gin",
      "marca": "Myrica",
      "precio": 1250,
-     "imagen": "../imagenes/myrica.jpeg",
+     "imagen": myrica,
      "stock": 10,
      "id": 2
     },
@@ -27,7 +31,7 @@ const prod = [{
      "nombre":"Cerveza",
      "marca": "Kraken",
      "precio": 280,
-     "imagen": "../imagenes/cerveza.jpeg",
+     "imagen": kraken,
      "stock": 10,
      "id": 3
    }
@@ -50,7 +54,7 @@ useEffect(() => {
 
 return(
   <>
-      <itemList item={catalogo}/> 
+      <ItemList item={catalogo} /> 
   </>
 )
 }

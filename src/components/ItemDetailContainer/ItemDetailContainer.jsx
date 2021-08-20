@@ -9,7 +9,6 @@ export const ItemDetailContainer = () => {
 
 
     useEffect(() => {
-
       const getItem = () => {
           return 
       }  
