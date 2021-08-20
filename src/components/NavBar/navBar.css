@@ -1,0 +1,37 @@
+#menuPrincipal  {
+    width: 300px;
+    height: 100%;
+    background-color: rgba(12, 119, 241, 0.3);
+	margin-top: 10px;
+   margin-left: 900px;
+}
+#menuPrincipal ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+#menuPrincipal ul li {
+    text-align: center;
+	display: block;
+}
+#menuPrincipal ul li a {
+	display: inline-block;
+	padding: 20px 10px;
+    font-size: 22px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+#menuPrincipal ul li:hover {
+    border-left: 2px solid #ffffff;
+    box-shadow: 0 0 4px rgba(255, 255, 225, 0.8);
+}
+#menuPrincipal ul li a:hover {
+	color: #f7e704;
+}
+#logoBlack {
+	width: 265px;
+	height: 35px;
+	background-image: url(../../imagenes/logoblackredTipo.png);
+	margin-left: 920px;
+}

@@ -1,0 +1,22 @@
+#textoVentas {
+    width: 300px;
+    height: 40px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    float: left;
+    margin-top: 20px;
+   
+}
+#comanda {
+    width: 200px;
+    height: 80px;
+    color: rgb(201, 255, 6);
+    font-size: 40px;
+    float: left;
+    margin-top: 10px;
+}
+#contadorCarrito {
+    width: 400px;
+    height: 80px;
+}
