@@ -11,12 +11,9 @@ export const ItemList = ({item}) => {
   }, [item])
 
   return (
-
+  
     <div className="card">
-      <h1>Nuestros Productos</h1>
-
-
-          {item.map(item => (
+            {item.map(item => (
             <Item  key={item.id} item={item} />
           ))}
 

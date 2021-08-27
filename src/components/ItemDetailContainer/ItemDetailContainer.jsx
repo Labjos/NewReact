@@ -1,28 +1,34 @@
 import { useEffect, useState } from "react"
-//import { useParams } from "react-router"
-import { ItemDetail} from '../itemDetail/itemDetail'
+import { useParams } from "react-router"
+import { ItemDetail} from '../ItemDetail/ItemDetail'
+import { Link } from 'react-router-dom'
 
 
-export const ItemDetailContainer = () => {
-
+export const ItemDetailContainer = (data) => {
     const [item, setItem] = useState ()
+    const param = useParams
 
 
     useEffect(() => {
-      const getItem = () => {
-          return 
-      }  
+      setTimeout(() => {
+      fetch(`https://swapi.dev/api/people/:id/`)
+      .them((resp) => {
+        console.log(resp)
+        return resp.json()
+      })
+      .then((data) => {
+        setItem(data)
+      })
+    }, 2000)  
 
-      const item =  getItem()
-      setItem(item)
-        
-        }, [])
+    },[])
 
         return (
 
-        <div>
+          <Link to={`/category/:categoryId/${item.id}`}><div>
+          <h3>{JSON.stringify(param)}</h3>
           <ItemDetail item={item}  />
-        </div>
+        </div></Link>
        )
        }
 

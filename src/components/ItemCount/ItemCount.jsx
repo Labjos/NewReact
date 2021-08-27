@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import '../ItemCount/ItemCount.css'
-import productos from '../../imagenes/nero.JPG'
 
 
-export const ItemCount = ({initial = 0 , stock, onAdd}) => { 
+export const ItemCount = ({initial, stock, onAdd}) => { 
  
     const [contador, setContador] = useState (initial)
     const [newStock, setNewStock] = useState(stock)
@@ -31,18 +30,15 @@ export const ItemCount = ({initial = 0 , stock, onAdd}) => {
        }
     }
 
-         
+    
     return (
-           <div>
+           
+        <div >
                <p>Counter:${contador}</p>
-            
-              
+
+                      
         <div className="card">
-                <h3>Nero 53</h3>
-                <p id="id">ID:002</p>
-                <img id="imagenCard" src={productos} alt="Imagen del Producto" />         
-                <p id ="precio">Precio $620</p>
-                <p id ="descripcion">Botella de 750cc</p>
+                
             <div id="fondoContador">
                 <h3>Cantidad:</h3>
                 <p id="contador">{contador}</p>
