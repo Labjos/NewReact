@@ -2,21 +2,22 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-export const Item = ({item}) => {
+export const Item = ({ item }) => {
 const { category, id, marca, precio, imagen, stock, description } = item
     return ( 
-           <Link to={`/item/${item.id}`}><div id="card"> 
-                <h3>{category}</h3>
-                <h3>{marca}</h3>
-                <p id="id">{id}</p>
-                <img src={imagen} alt="Producto"/>
-                <p>{precio}</p>
-                <p>{stock}</p>
-                <p>{description}</p>
-            </div></Link>
+           <Link to={`/item/${item.id}`}>
+               <div id="card"> 
+                    <h3>{category}</h3>
+                    <h3>{marca}</h3>
+                    <p id="id">{id}</p>
+                    <img src={imagen} alt="Producto"/>
+                    <p>{precio}</p>
+                    <p>{stock}</p>
+                    <p>{description}</p>
+                </div></Link>
     )
-    
 }
+
 
 
 

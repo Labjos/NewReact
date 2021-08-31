@@ -49,8 +49,7 @@ useEffect(() => {
   }) 
   
   nuevaPromesa.then((res)=> {
-    console.log(res)
-    setCatalogo(res)
+      setCatalogo(res)
   })
 
 },[])
@@ -58,8 +57,7 @@ useEffect(() => {
 return(
   <>
     <h2>{categotyId}</h2>
- 
-      <ItemList item={catalogo} /> 
+    <ItemList item={catalogo} /> 
   </>
 )
 }

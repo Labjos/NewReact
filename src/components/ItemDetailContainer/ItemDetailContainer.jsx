@@ -1,33 +1,30 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router"
+//import { useParams } from "react-router"
 import { ItemDetail} from '../ItemDetail/ItemDetail'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 
 export const ItemDetailContainer = (data) => {
+    let prodId = data.params.id
     const [item, setItem] = useState ()
-    const param = useParams
-
+   
 
     useEffect(() => {
       setTimeout(() => {
-      fetch(`https://swapi.dev/api/people/:id/`)
-      .them((resp) => {
-        console.log(resp)
-        return resp.json()
-      })
-      .then((data) => {
-        setItem(data)
-      })
+        axios(`http://localhost:3000/item/${prodId}`).then((resp) => 
+            setItem(resp.data)
+        )
     }, 2000)  
 
-    },[])
+    },[prodId])
 
         return (
 
-          <Link to={`/category/:categoryId/${item.id}`}><div>
-          <h3>{JSON.stringify(param)}</h3>
-          <ItemDetail item={item}  />
+          <Link to={`/item/: id/${item.id}`}><div>
+          <h3>{JSON.stringify(prodId)}</h3>
+          <ItemDetail item={ item }  />
+         
         </div></Link>
        )
        }

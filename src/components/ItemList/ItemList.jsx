@@ -3,8 +3,6 @@ import { Item } from '../Item/Item'
 import '../ItemList/itemList.css'
 
 
-
-
 export const ItemList = ({item}) => {
   useEffect(() => {
     console.log(item)

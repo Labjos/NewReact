@@ -29,14 +29,12 @@ export const ItemCount = ({initial, stock, onAdd}) => {
  
        }
     }
-
     
     return (
            
         <div >
                <p>Counter:${contador}</p>
 
-                      
         <div className="card">
                 
             <div id="fondoContador">

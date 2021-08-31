@@ -12,10 +12,7 @@ export const CartWidget = () => {
              <div id="comanda"><FontAwesomeIcon icon={faShoppingCart}/></div>
             <div id="textoVentas">Hola! estas en tu zona de compra</div>
             <div id="contadorCarrito">Tienes: Productos Seleccionados!</div>
-           
         </div>        
-        )
+    )
 }
 
-    
-    

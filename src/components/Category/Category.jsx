@@ -1,9 +1,9 @@
 import React, {useEffect, useState}from 'react'
 import Item from '../Item/Item';
 
-const ListCategory = ({ match }) => {
+const ListCategory = ({ item }) => {
 
-    const categoryId = match.params.id
+    const categoryId = item.params.id
     function capitalize(str) {
         const lower = str.toLowerCase();
         return str.charAt(0).toUpperCase() + lower.slice(1);

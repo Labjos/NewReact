@@ -5,8 +5,8 @@ import { NavBar } from './components/NavBar/NavBar'
 import { Fondo } from './components/Fondo/Fondo'
 import { Footer } from './components/Footer/Footer'
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
-import { ItemCount} from '../src/components/ItemCount/ItemCount'
-//import { ItemDetailContainer } from '../src/components/ItemDetailContainer/ItemDetailContainer'
+//import { ItemCount} from '../src/components/ItemCount/ItemCount'
+import { ItemDetailContainer } from '../src/components/ItemDetailContainer/ItemDetailContainer'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 //import ListCategory from '../src/components/Category/Category'
@@ -31,18 +31,15 @@ function App() {
 
         <Switch>
           <Route exact path='/' component={Home}>
-             
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>Bienvenido a Black#53Red <br/>el Speak Easy Global !!!</p></Route>  
                   
           <Route exact path='/Productos' component={ Productos }>
            
               <ItemListContainer />
-              
-              <ItemCount />
           </Route>
           <Route path='/category/:categoryId'></Route>
-          <Route path='/item/:id'></Route>
+          <Route path='/item/:id/' component={ ItemDetailContainer }></Route>
           <Route exact path='/About' component={ About }></Route>
           <Route exact path='/Contacto' component={ Contacto }></Route>
     
