@@ -16,7 +16,6 @@ export const ItemList = ({item}) => {
             {item.map(item => (
             <Item  key={item.id} item={item} />
           ))}
-
     </div>
 )
 }

@@ -10,7 +10,7 @@ import { ItemCount} from '../src/components/ItemCount/ItemCount'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 //import ListCategory from '../src/components/Category/Category'
-import People from '../src/components/People/People'
+//import People from '../src/components/People/People'
 
 //Views
 import { Home } from '../src/pages/Home'
@@ -38,7 +38,7 @@ function App() {
           <Route exact path='/Productos' component={ Productos }>
            
               <ItemListContainer />
-              <People />
+              
               <ItemCount />
           </Route>
           <Route path='/category/:categoryId'></Route>
