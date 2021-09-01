@@ -11,7 +11,7 @@ import { useParams } from 'react-router-dom'
 export const ItemListContainer = () => {
 
 const [catalogo, setCatalogo] = useState([])
-const {categotyId} = useParams()
+const {categoryId} = useParams()
 
 useEffect(() => {
 
@@ -56,7 +56,7 @@ useEffect(() => {
 
 return(
   <>
-    <h2>{categotyId}</h2>
+    <h2>{categoryId}</h2>
     <ItemList item={catalogo} /> 
   </>
 )

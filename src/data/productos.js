@@ -1,5 +1,6 @@
-[
-    {
+export const Productos = [
+
+  {
       "nombre":"Fernet",
       "marca": "Nero53",
       "precio": 620,
