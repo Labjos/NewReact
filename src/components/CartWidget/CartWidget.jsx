@@ -2,10 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import './cartWidget.css'
 
-
-
 export const CartWidget = () => {
-
 
     return (
         <div className ="cartWidget">
@@ -15,4 +12,7 @@ export const CartWidget = () => {
         </div>        
     )
 }
+
+
+
 

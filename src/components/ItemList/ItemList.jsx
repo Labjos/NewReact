@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
-import { Item } from '../Item/Item'
 import '../ItemList/itemList.css'
+import { Item } from '../Item/Item'
 
 
 export const ItemList = ({item}) => {
@@ -9,7 +9,6 @@ export const ItemList = ({item}) => {
   }, [item])
 
   return (
-  
     <div className="card">
             {item.map(item => (
             <Item  key={item.id} item={item} />

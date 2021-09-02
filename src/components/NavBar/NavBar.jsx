@@ -22,5 +22,5 @@ export const NavBar =() => {
             </nav>
     </div>
   )
-} 
-    
+}
+

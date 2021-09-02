@@ -12,11 +12,8 @@ const [count, setCount] = useState(null)
 const onAdd = (valor) => {
     valor > 0 ? setCount(valor) : alert("Agregar Producto")
 }
-
-
     return ( 
-        <div id="card"> 
-         
+        <div id="card" key={item.id}> 
             <h3>{category}</h3>
             <p>{marca}</p>
             <p id="id">{id}</p>
@@ -27,9 +24,10 @@ const onAdd = (valor) => {
             <p>{ count === null ? <ItemCount stock={5} initial={1} onAdd={onAdd} /> :
     <Link to='/card'>
         <Button >Realizar Compra</Button>
-        </Link>            
+        </Link>
 } </p>
 
         </div>
     )
 }
+

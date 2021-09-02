@@ -6,7 +6,7 @@ export const Item = ({ item }) => {
 const { category, id, marca, precio, imagen, stock, description } = item
     return ( 
            <Link to={`/item/${item.id}`}>
-               <div id="card"> 
+               <div id="card" key={item.id}> 
                     <h3>{category}</h3>
                     <h3>{marca}</h3>
                     <p id="id">{id}</p>
@@ -17,8 +17,3 @@ const { category, id, marca, precio, imagen, stock, description } = item
                 </div></Link>
     )
 }
-
-
-
-
-   

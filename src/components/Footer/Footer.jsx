@@ -5,15 +5,10 @@ import './footer.css'
 import logoBlack from '../../imagenes/logo.png';
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons"
 
-
-
-
 export const Footer = () => {
-
 
     return (
         <div className = "footer">
-          
             <div className="pie">
                 <div id="iconoWas"><FontAwesomeIcon icon= { faWhatsappSquare }/>
                     </div>
@@ -24,9 +19,8 @@ export const Footer = () => {
                 <div id="email">info@black53red.com</div>
                 <img id="logoBlackRed"  src={ logoBlack } alt="logo BlackRed" />
             </div>
-
         </div>
        
     )
-
 }
+

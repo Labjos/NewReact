@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import '../ItemCount/ItemCount.css'
 
-
 export const ItemCount = ({initial, stock, onAdd}) => { 
  
     const [contador, setContador] = useState (initial)
@@ -34,9 +33,7 @@ export const ItemCount = ({initial, stock, onAdd}) => {
            
         <div >
                <p>Counter:${contador}</p>
-
         <div className="card">
-                
             <div id="fondoContador">
                 <h3>Cantidad:</h3>
                 <p id="contador">{contador}</p>
@@ -47,5 +44,3 @@ export const ItemCount = ({initial, stock, onAdd}) => {
         </div>
     )
 }  
-
-
