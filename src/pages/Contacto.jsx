@@ -1,13 +1,7 @@
-
-
 export const Contacto = () => {
- 
-    return (
-  
+  return (
     <div className="">
-        <h1>Contacto</h1>
-           
-
+      <h1>Contacto</h1>
     </div>
-)
-}
+  );
+};

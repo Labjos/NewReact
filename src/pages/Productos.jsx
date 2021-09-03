@@ -1,13 +1,7 @@
-
-
 export const Productos = () => {
- 
-    return (
-  
+  return (
     <div className="">
-        <h1>productos</h1>
-           
-
+      <h1>productos</h1>
     </div>
-)
-}
+  );
+};
