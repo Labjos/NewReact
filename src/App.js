@@ -8,7 +8,7 @@ import { ItemListContainer } from "./components/ItemListContainer/ItemListContai
 import { ItemDetailContainer } from "../src/components/ItemDetailContainer/ItemDetailContainer";
 //import { ItemDetail } from'../src/components/ItemDetail/ItemDetail'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
+import { SubMenu } from '../src/components/SubMenu/SubMenu'
 //import ListCategory from '../src/components/Category/Category'
 
 //Views
@@ -24,30 +24,29 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <Fondo />
-          <NavBar />
+          <Fondo>
+            <NavBar />
+            <SubMenu />
+            <Switch>
+              <Route exact path="/" component={Home}>
+                <img src={logo} className="App-logo" alt="logo" />
+                <p>
+                  Bienvenido a Black#53Red <br />
+                  el Speak Easy Global !!!
+                </p>
+              </Route>
 
-          <Switch>
-            <Route exact path="/" component={Home}>
-              <img src={logo} className="App-logo" alt="logo" />
-              <p>
-                Bienvenido a Black#53Red <br />
-                el Speak Easy Global !!!
-              </p>
-            </Route>
-
-            <Route exact path="/Productos" component={Productos}>
-              <ItemListContainer />
-            </Route>
-            <Route
-              path="/category/:categoryId"
-              component={ItemListContainer}
-            ></Route>
-            <Route path="/item/:id" component={ItemDetailContainer}></Route>
-            <Route exact path="/About" component={About}></Route>
-            <Route exact path="/Contacto" component={Contacto}></Route>
-          </Switch>
+              <Route exact path="/Productos" component={Productos}>
+                <ItemListContainer />
+              </Route>
+              <Route path="/category/:categoryId" component={ItemListContainer}></Route>
+              <Route path="/item/:id" component={ItemDetailContainer}></Route>
+              <Route exact path="/About" component={About}></Route>
+              <Route exact path="/Contacto" component={Contacto}></Route>
+            </Switch>
+          </Fondo>
         </header>
+
         <Footer />
       </div>
     </Router>

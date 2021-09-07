@@ -9,7 +9,7 @@ export const CartWidget = () => {
         <FontAwesomeIcon icon={faShoppingCart} />
       </div>
       <div id="textoVentas">Hola! estas en tu zona de compra</div>
-      <div id="contadorCarrito">Tienes: Productos Seleccionados!</div>
+      
     </div>
   );
 };

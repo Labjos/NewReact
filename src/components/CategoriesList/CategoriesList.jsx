@@ -6,7 +6,7 @@ const ListCategory = ({ item }) => {
   const [category, setCategory] = useState([]);
   useEffect(() => {
     setTimeout(() => {
-      fetch(`https://localhost: 3000/category/:id/1/`).then((res) =>
+      
         setCategory(res.data)
       );
     }, 1000);

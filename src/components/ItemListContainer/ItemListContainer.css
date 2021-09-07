@@ -1,3 +1,8 @@
-.Card {
-    display: flex;
+.card {
+  display: flex;
+  width: 50%;
+  background-color: rgba(248, 247, 246, 0.24);
+  justify-content: space-around;
+  float: left;
+  margin-top: 40px;
 }

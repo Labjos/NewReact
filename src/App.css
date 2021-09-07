@@ -1,10 +1,32 @@
+h2 {
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+h3 {
+  font-size: 25px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+p {
+  font-size: 20px;
+  margin-bottom: 0px;
+  color: white;
+}
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  margin-top: 40px;
+
+}
+#id {
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #ffd000;
 }
 
 @media (prefers-reduced-motion: no-preference) {

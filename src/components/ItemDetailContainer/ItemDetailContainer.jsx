@@ -9,30 +9,30 @@ const nuevaPromesa = new Promise((res, rej) => {
   setTimeout(() => {
     res([
       {
-        category: "Fernet",
+        category: "licores",
         marca: "Nero53-Fernet",
         precio: 620,
         imagen: nero,
         stock: 5,
-        id: 10,
+        id: 1,
         description: "Botella de 750cc",
       },
       {
-        category: "Gin",
+        category: "destilados",
         marca: "Myrica",
         precio: 1250,
         imagen: myrica,
         stock: 10,
-        id: 20,
+        id: 2,
         description: "Botella de 500cc",
       },
       {
-        category: "Cerveza",
+        category: "cervezas",
         marca: "Kraken",
         precio: 280,
         imagen: kraken,
         stock: 10,
-        id: 30,
+        id: 3,
         description: "Lata de 480cc",
       },
     ]);

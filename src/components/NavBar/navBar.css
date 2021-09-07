@@ -1,40 +1,45 @@
-#menuPrincipal  {
-    width: 300px;
-    height: 100%;
-    background-color: rgba(12, 119, 241, 0.3);
-	font-family:'Orbitron', sans-serif, sans-serif;
-	font-size: 25px;
-	margin-top: 10px;
-  	margin-left: 920px;
+#menuPrincipal {
+  width: 270px;
+  height: 200px;
+  background-color: rgba(255, 166, 0, 0.459);
+  font-family: "Orbitron", sans-serif, sans-serif;
+  font-size: 25px;
+  float: right;
+  margin-top: 30px;
+  margin-right: 70px;
 }
 #menuPrincipal ul {
-	margin: 0px;
-	padding: 0px;
-	list-style-type: none;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 0px;
 }
 #menuPrincipal ul li {
-	width: 300px;
-	height: 50px;
-    text-align: center;
-	display: block;
+  width: 270px;
+  height: 50px;
+  color: rgb(8, 95, 255);
+  padding: 15px;
+  display: block;
 }
 #menuPrincipal ul li a {
-	display: inline-block;
-	font-size: 22px;
-	color: #fff;
-	text-decoration: none;
-	font-weight: bold;
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
 }
 #menuPrincipal ul li:hover {
-    border-left: 2px solid #ffffff;
-    box-shadow: 0 0 4px rgba(255, 255, 225, 0.8);
+  border-left: 2px solid #ffffff;
+  box-shadow: 0 0 4px rgba(255, 255, 225, 0.8);
+  padding: 15px;
 }
-#menuPrincipal ul li a:hover {
-	color: #f7e704;
+#menuPrincipal ul li:hover {
+  color: white;
 }
 #logoBlack {
-	width: 265px;
-	height: 35px;
-	background-image: url(../../imagenes/logoblackredTipo.png);
-	margin-left: 920px;
+  width: 265px;
+  height: 35px;
+  background-image: url(../../imagenes/logoblackredTipo.png);
+  float:left;
+  margin-left: 610px;
 }

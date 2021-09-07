@@ -1,0 +1,21 @@
+#textoNeon {
+    width: 400px;
+    height: 40px;
+    font-family: 'Orbitron', sans-serif ;
+    color: #fce306;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: 25px;
+    animation: neon 2s infinite alternate;
+}
+@keyframes neon {
+    0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+        text-shadow: 9px 9px 18px #f1e14a,
+                     3px 3px 5px #f8b703,
+                     -3px -3px 5px #0ef7eb,
+                     -9px -9px 27px #78fae9; 
+    } 
+    10%, 20%, 60% {
+        text-shadow: none;
+    }
+}
