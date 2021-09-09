@@ -54,7 +54,7 @@ export const ItemListContainer = () => {
     nuevaPromesa.then((productosBar) => {
       setCatalogo(productosBar);
     });
-  }, []);
+  }, [categoryId]);
 
   return (
     <>
